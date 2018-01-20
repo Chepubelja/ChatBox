@@ -1,0 +1,74 @@
+.messages-box {
+  height: 290px;
+  max-height: 1000px;
+  overflow-y: auto;
+}
+
+.message-block {
+  margin: 7px 0 6px 0;
+  &:first-child {
+    margin-top: 18px;
+  }
+  &:last-child {
+    margin-bottom: 16px;
+  }
+  &:only-child {
+    border-radius: 50%;
+  }
+  &_left {
+    float: left;
+  }
+  &_right {
+    float: right;
+  }
+  &__person-photo {
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    float: left;
+    margin-left: 16px;
+  }
+  &__message-wrapper {
+    padding: 6px 12px;
+    max-width: 180px;
+    margin-top: 2px;
+    &_left {
+      float: left;
+      margin-left: 8px;
+      background-color: #f3f3f3;
+      &:not(:first-of-type) {
+        margin-left: 52px;
+      }
+      &:not(:first-of-type), &:not(:last-of-type){
+        border-radius: 0 15px 15px 0;
+      }
+      &:last-of-type {
+        border-radius: 0 15px 15px 15px;
+      }
+      &:first-of-type {
+        border-radius: 15px 15px 15px 0;
+        margin-left: 8px;
+      }
+    }
+    &_right {
+      float: right;
+      margin-right: 14px;
+      background-color: #2979ff;
+      color: white;
+      &:first-child {
+        border-radius: 15px 15px 0 15px;
+      }
+      &:last-child {
+        border-radius: 15px 0 15px 15px;
+      }
+    }
+    &:only-of-type {
+      border-radius: 15px;
+    }
+  }
+  &__message {
+    margin: 0;
+    font-family: OpenSans, sans-serif;
+    font-size: 12px;
+  }
+}
