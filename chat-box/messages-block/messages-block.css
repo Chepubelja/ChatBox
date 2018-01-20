@@ -5,6 +5,7 @@
 }
 .message-block {
   margin: 7px 0 6px 0;
+  width: 100%;
 }
 .message-block:first-child {
   margin-top: 18px;
