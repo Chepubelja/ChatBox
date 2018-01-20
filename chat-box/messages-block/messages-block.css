@@ -58,6 +58,10 @@
   background-color: #2979ff;
   color: white;
 }
+.message-block__message-wrapper_right:not(:first-child),
+.message-block__message-wrapper_right:not(:last-child) {
+  border-radius: 15px 0 0 15px;
+}
 .message-block__message-wrapper_right:first-child {
   border-radius: 15px 15px 0 15px;
 }
